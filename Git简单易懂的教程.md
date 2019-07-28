@@ -144,7 +144,15 @@ git 的工作模式是:
 
 
 - 问: 什么情况下应该用 rebase?  
-TODO 
+第一种场景:  
+如果我想手动的自己处理分支, 比如远程仓库已经更新, 我执行如下操作:
+step1: git fetch origin  
+step2: git rebase origin/master master :这句话的意思是以origin/master 为base, 把master放到origin/master的末端
+这样就可以把提交历史捋直了, 否则就会出现一次merge操作. 
+上面两句等同于 git pull --rebase: 把本地的放到远程的上面, 让本地的提交包括远程的提交.  
+  > 有一种错误的rebase, 在step2, 执行 git rebase master origin/master, 因为origin/master是不可以移动的, git会自动拷贝一个提交历史放到master的前面, 这样一来, 尽管内容是相同的, 可是本地的分支包含了远程分支没有的提交历史, 中间夹了几个本地提交的分支, 就会导致无法推送. 感兴趣的不妨试一下. 
+
+
 
 - 问: 远程分支怎么用? 如何查看远程分支? 
 TODO  
