@@ -107,7 +107,7 @@ git 的工作模式是:
     快照是什么, 我如今仍然不得而知.  
 
 - 问: checkout 命令是什么?  
-答: 想要搞懂 checkout 命令,手下要理解分支的概念.  
+答: 想要搞懂 checkout 命令,首先要理解分支的概念.  
 什么是分支, 有人说,分支, 就是 git branch new_branch old_branch(或者commitID), 这个命令创建的. 我们需要深入的理解一下, 不能光知其然而不知其所以然. 分支, 就是一个区域, 有起点, 有终点, 起点一个 CommitA, 终点 CommitB. 大名鼎鼎的 master 分支, 我们都熟悉, 
 自然起点是最早的那个提交, 而终点, 我们可以使用 git show master 查看master的终点.  
 我们先搁置这个问题, 继续往下看.
