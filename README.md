@@ -357,7 +357,7 @@ $ git checkout 1a
 
 
 
-<img src="/Users/zxzx/typora_pics/image-20200618095257616.png" alt="image-20200618095257616" style="zoom:50%;margin:0" />
+<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618095257616.png" alt="image-20200618095257616" style="zoom:50%;margin:0" />
 
 
 
