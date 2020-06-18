@@ -185,7 +185,7 @@ git 的工作模式是什么？
 
 Git 主要的目的是通过操纵这三棵树来以更加连续的状态记录项目的快照。
 
-<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618092908203.png" alt="image-20200618092908203" style="zoom:67%;margin:0" />
+<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618092908203.png" alt="image-20200618092908203" style="zoom:50%;margin:0" />
 
 让我们来可视化这个过程：假设我们进入到一个新目录，其中有一个文件。 我们称其为该文件的 v1 版本，将它
 标记为蓝色。 
@@ -193,7 +193,7 @@ Git 主要的目的是通过操纵这三棵树来以更加连续的状态记录�
 1 现在运行 git init，这会创建一个 Git 仓库，其中的 HEAD 引用指向未创建的分支（master 还
 不存在）。我们创建一个 file1.txt，那么现在仓库的情况是这样的：
 
-<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618093126098.png" alt="image-20200618093126098" style="zoom:67%;margin:0" />
+<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618093126098.png" alt="image-20200618093126098" style="zoom:50%;margin:0" />
 
 此时，只有工作目录有内容。
 
@@ -201,24 +201,24 @@ Git 主要的目的是通过操纵这三棵树来以更加连续的状态记录�
 
 2 **现在我们想要提交这个文件，所以用 git add 来获取工作目录中的内容，并将其复制到索引区中**。
 
-<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618093242914.png" alt="image-20200618093242914" style="zoom:67%;margin:0" />
+<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618093242914.png" alt="image-20200618093242914" style="zoom:50%;margin:0" />
 
 
 
 3 **接着运行 git commit**，它会取得索引中的内容并将它保存为一个永久的快照，然后创建一个指向该快照的提交对象，最后更新 master 来指向本次提交。
 
-<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618093605400.png" alt="image-20200618093605400" style="zoom:67%;margin:0" />
+<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618093605400.png" alt="image-20200618093605400" style="zoom:50%;margin:0" />
 
 
 
 **4** 现在我们想要对文件进行修改然后提交它。 我们将会经历同样的过程；首先在工作目录中修改文件。 我们称其
 为该文件的 v2 版本，并将它标记为红色。
-<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618093724948.png" alt="image-20200618093724948" style="zoom:67%;" />
+<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618093724948.png" alt="image-20200618093724948" style="zoom:50%;margin:0" />
 
 如果现在运行 **git status**，我们会看到文件显示在 “Changes not staged for commit,” 下面并被标记为红
 色，因为该条目在索引与工作目录之间存在不同。 接着我们运行 **git add** 来将它暂存到索引中。
 
-<img src="/Users/zxzx/typora_pics/image-20200618093847326.png" alt="image-20200618093847326" style="zoom:67%;margin:0" />
+<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618093847326.png" alt="image-20200618093847326" style="zoom:50%;margin:0" />
 
 此时，由于索引和 HEAD 不同，若运行 git status 的话就会看到 “Changes to be committed” 下的该文件
 变为绿色 ——也就是说，现在预期的下一次提交与上一次提交不同。 
@@ -227,7 +227,7 @@ Git 主要的目的是通过操纵这三棵树来以更加连续的状态记录�
 
 5 最后，我们运行 **git commit** 来完成提交。
 
-<img src="/Users/zxzx/typora_pics/image-20200618094027488.png" alt="image-20200618094027488" style="zoom:67%;margin:0" />
+<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618094027488.png" alt="image-20200618094027488" style="zoom:50%;margin:0" />
 
 
 
@@ -297,7 +297,7 @@ Git 主要的目的是通过操纵这三棵树来以更加连续的状态记录�
 
 
 
-![image-20200618092039831](/Users/zxzx/typora_pics/image-20200618092039831.png)
+![image-20200618092039831](https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618092039831.png)
 
 图 来自 ProGit
 
@@ -357,7 +357,7 @@ $ git checkout 1a
 
 
 
-<img src="/Users/zxzx/typora_pics/image-20200618095257616.png" alt="image-20200618095257616" style="zoom:67%;margin:0" />
+<img src="/Users/zxzx/typora_pics/image-20200618095257616.png" alt="image-20200618095257616" style="zoom:50%;margin:0" />
 
 
 
@@ -422,7 +422,7 @@ reset 做的第一件事是移动 HEAD 的指向。reset 移动HEAD 指向的分
 注意，如果你现在运行 git status 的话，就会看到新的 HEAD 和以绿色标出的它和索引之间的区别。
 接下来，reset 会用 HEAD 指向的当前快照的内容来更新索引。
 
-<img src="/Users/zxzx/typora_pics/image-20200618101649341.png" alt="image-20200618101649341" style="zoom:67%;margin:0" />
+<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618101649341.png" alt="image-20200618101649341" style="zoom:67%;margin:0" />
 
 如果指定 --mixed 选项，reset 将会在这时停止。 **这也是默认行为**，所以如果没有指定任何选项（在本例中只是 git reset HEAD~），这就是命令将会停止的地方。
 
@@ -434,7 +434,7 @@ reset 做的第一件事是移动 HEAD 的指向。reset 移动HEAD 指向的分
 
 reset 要做的的第三件事情就是让工作目录看起来像索引。 如果使用 --hard 选项，它将会继续这一步。
 
-<img src="/Users/zxzx/typora_pics/image-20200618102225932.png" alt="image-20200618102225932" style="zoom:67%;" />
+<img src="https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618102225932.png" alt="image-20200618102225932" style="zoom:67%;" />
 
 现在让我们回想一下刚才发生的事情。 
 
