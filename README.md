@@ -2,7 +2,7 @@
 
 ![git-faq](https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/git-faq-2450018.jpg)
 
-[![standard-readme compliant](/Users/zxzx/typora_pics/standard--readme-OK-green.svg)](https://github.com/RichardLitt/standard-readme)
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 先吐个槽：
 
