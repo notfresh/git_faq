@@ -39,7 +39,7 @@ git的入门是真的难.
 - [维护者](#维护者)
 - [如何贡献](#如何贡献)
 - [参考文献](#参考文献)
-- [Lisence](#Lisence)
+- [Licence](#licence)
 
 
 
@@ -566,7 +566,7 @@ https://rogerdudler.github.io/git-guide/index.zh.html
 
 
 
-## License
+## Licence
 
 CC4.0 自由转载-保持署名  © 2020 notfresh
 
