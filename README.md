@@ -43,7 +43,7 @@ git的入门是真的难.
 
 
 
-## 学 Git 的误区和正确姿势 
+## 学 git 的误区和正确姿势 
 
 我犯过很多错误，现在就来盘点一下自己踩过的坑和总结的经验。
 
@@ -175,9 +175,9 @@ http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
 
 
 
-## Git 的关键概念
+## git 的关键概念
 
-git 的工作模式是什么？
+### git 的工作模式
 
  git 有三个区, 历史版本区(或者已经提交区), 待提交区(暂存区), 工作区. 还有其他的名字, 英文名分别叫 repository, index 或者 staging area, working directory. 无论他们叫什么名字, 他们的本质都一样的。
 
@@ -258,9 +258,7 @@ Git 主要的目的是通过操纵这三棵树来以更加连续的状态记录�
 
 
 
-
-
-### 问: 什么是提交?  
+### git 中的提交  
 
 
 
@@ -269,10 +267,11 @@ Git 主要的目的是通过操纵这三棵树来以更加连续的状态记录�
 
 一次提交记录了提交时间,提交人, 提交的标题, 详细的消息, 等等等等...    
 
+### git 中的分支
 
+TODO 
 
-### 问: 提交和分支的关系?  
-就我个人而言, 我提出以下理解:  
+### 提交和分支的关系
 假设有 10 个分支, 按时间从早到晚, C1, C2,.., C10. 
 有一个分支 master. master 现在指向 C5,起点是 C1.  
 在C2 的时候, 创建了branchX, 然后 branchX 目前指向 C5, 包含了 4 个分支, 那么如果删掉分支 branchX, C2~C5会被删除吗? 
@@ -287,7 +286,13 @@ Git 主要的目的是通过操纵这三棵树来以更加连续的状态记录�
 
 
 
-## Git 高频命令
+### git 的HEAD指针
+
+TODO
+
+
+
+## git 高频命令
 
 我们经常使用到
 
@@ -297,19 +302,90 @@ Git 主要的目的是通过操纵这三棵树来以更加连续的状态记录�
 
 
 
+git管理下的文件有几个状态，如下图所示，
+
+- 没有跟踪的状态
+- 未修改状态
+- 修改状态
+- 暂存待提交状态
+
+
+
 ![image-20200618092039831](https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200618092039831.png)
 
 图 来自 ProGit
 
 
 
-我们最常用的几个命令之一，就是 git add命令了。
+我们最常用的几个命令之一，第一个就是 git add命令了。
+
+git add 实现了 untracked->staged 和 modified->staged 的阶段。
+
+**补充一个实用小技巧，**如果一次修改太多，想在暂存的时候查看修改了哪里，可以使用 `git add --patch [FILE_NAME]` 或者 `git add -p [FILE_NAME] `  命令一块一块的暂存。
 
 
 
 ### git commit 命令
 
+正如我们前面关键概念所讲到的，一次 git commit 形成了一次提交历史，使用一个非常长的哈希码表示，形式是一串字母加数字，这个哈希码根据文件的大小，创建提交的时间，提交者信息等等综合生成，几乎不会有哈希冲突。即便是不同的人在不同的电脑上提交，生成的哈希码也是不同的，所以可以保证多人开发的时候的全局唯一性。
 
+git commit -m COMMIT_MASSAGE
+
+其中，COMMIT_MASSAGE 应该尽量使用动宾短语，简练而清晰。
+
+![image-20200626193122117](https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200626193122117.png)
+
+如果使用 git commit 而不带 -m 参数，那么会进入详细提交信息的编辑页面，默认的编辑器在 MacOS 和 Linux 下是 Vim 编辑器，第一行是提交信息，第二行是空行，（包含）第三行往下是详细说明信息，如果本次提交需要附加的信息特别多，应该在编辑器里详细写明。
+
+![image-20200626193807855](https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200626193807855.png)
+
+![image-20200626193636486](https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200626193636486.png)
+
+`#`开头表示的注释信息会被自动忽略掉。
+
+如图所示, 使用 `git show  HEAD`命令或者 git show COMMIT_ID， 即可查看一次提交的详细信息。
+
+> git show COMMIT_ID 命令可以查看一次提交的详细信息。
+
+![image-20200626193849481](https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200626193849481.png)
+
+
+
+哈希码字符串太长了，非常的不好记，**实际上一般最少只需要前4个字符即可表示**（如果本次提交前4个字符和其他提交哈希码相同，再加字符直到不重复为止，也即是最短不重复前缀原则）。
+
+例如 我可以使用 `git show b8b2` 来代替 `git show HEAD `
+
+
+
+
+
+###  git log 命令 
+
+git 查看一个文件的变化, 也可以查看整个仓库的变化。
+
+毫不夸张的说， git log 的命令是我们使用最高频的命令之一。然而 git log 本身输出的格式不是我们想要的，如图所示：
+
+![image-20200626195601056](https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200626195601056.png)
+
+
+
+展示了太多没用的信息，当我们想要查看更加详细的、可视化的信息的时候，我们可以在终端执行如下操作：
+
+```shell
+git config --global alias.l "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date='format:%Y-    %m-%d %H:%M:%S'"
+```
+
+这条命令为 git log 配置了一个别名，附带了很多的参数，我们可以使用 git l 查看效果：
+
+![image-20200626195807338](https://typora-1256991781.cos.ap-beijing.myqcloud.com/uPic/image-20200626195807338.png)
+
+具体的参数可以去官方该网站或者 ProGit 上查找对应配置信息，方便个性化设置。
+
+我们还可以给 git log  增加一个参数， git log FILE_PATH, 以此查看某个文件的提交信息。
+
+此外，git log 还支持 grep 命令查询提交信息（只支持提交信息查询），使用 `git log *--all --grep=KEY_WORD` 可以搜索某些提交
+
+此外，git log 还支持 其他特定字段的查询，比如根据作者查询`git log --author=AUTHOR_NAME`。
 
 
 
@@ -373,11 +449,7 @@ $ git checkout 1a
 
 
 
-###  git log 命令 
 
-git 查看一个文件的变化
-
-git log fileName
 
 
 
@@ -447,7 +519,11 @@ reset 要做的的第三件事情就是让工作目录看起来像索引。 如�
 
 ### git merge
 
-TODO
+
+
+
+
+
 
 ### git pull 
 
@@ -459,7 +535,7 @@ TODO
 
 
 
-##  Git 低频命令
+##  git 低频命令
 
 我会就 rebase、cherry-pick、rm、
 
@@ -557,6 +633,24 @@ Small note: If editing the README, please conform to the [standard-readme](https
 [1]git - 简明指南, no deep shit
 
 https://rogerdudler.github.io/git-guide/index.zh.html
+
+[2]工作流一目了然，看小姐姐用动图展示10大Git命令
+
+https://mp.weixin.qq.com/s/PUUL913fig6cFfqy4OKcGA
+
+[3]Git使用教程：最详细、最傻瓜、最浅显、真正手把手教！(建议收藏)
+
+https://mp.weixin.qq.com/s/g0jgzZZ0RG_-dNoBwEs16Q
+
+[4]Git 的 4 个阶段的撤销更改
+
+https://mp.weixin.qq.com/s/S33W_L9-taAC-aEuHvZYPQ
+
+[5]Git 居然还有这么高级用法，你一定需要
+
+https://mp.weixin.qq.com/s/LTHLKrle5mOczHKsK2k30A
+
+
 
 
 
