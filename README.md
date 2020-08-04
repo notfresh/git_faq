@@ -103,7 +103,7 @@ git的入门是真的难.
 
 
 [2] 高频使用的 Git 清单
-http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html  
 推荐理由：阮一峰出品，必属精品
 
 
@@ -116,7 +116,7 @@ http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
 
 网上的教程很多, 但是写的少的却不多. 就我个人而言, 如何形象的感受 Git 在工作中的应用, 我推荐去看廖雪峰的 Git 教程.  
 
-因为我在学习 Git 的时候, 刚开始看了一些别的网站的教程, 都是一些支离破碎的命令和比较浅的没有系统讲述 Git 使用的, 而且很多教程是互相抄袭的, 你抄我, 我抄你, 特别是 CSDN 上, 批评一下 CSDN 对于创作者的版权保护不够, 现在乌烟瘴气的, 导出是抄袭的文章.  
+因为我在学习 Git 的时候, 刚开始看了一些别的网站的教程, 都是一些支离破碎的命令和比较浅的没有系统讲述 Git 使用的, 而且很多教程是互相抄袭的, 你抄我, 我抄你, 特别是 CSDN 上, 批评一下 CSDN 对于创作者的版权保护不够, 现在乌烟瘴气的, 到处是抄袭的文章.  
 
  **这个教程内容丰富, 生动形象, 白话为主, 学起来相对 Easy, 我觉得三天或者一周左右可以吃透这个教程**.  
 
@@ -128,9 +128,9 @@ http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
 
 
 
-[4] 我用四个命令，总结了 Git 的所有套路
+[4] 四个命令总结 Git 的套路
 
-传送门：https://mp.weixin.qq.com/s/VdeQpFCL3GGsfOKrIRW6Hw
+传送门：https://mp.weixin.qq.com/s/VdeQpFCL3GGsfOKrIRW6Hw  
 
 推荐理由：labuladong的博客, 简单粗暴，魅力自成体系。
 
@@ -723,27 +723,62 @@ Small note: If editing the README, please conform to the [standard-readme](https
 
 ## 参考文献
 
-[1]git - 简明指南
+5@ [4]如果你觉得学习 Git 很枯燥，**那是因为你还没玩过这款游戏**！ - GitHub Daily的文章 - 知乎 
+
+https://zhuanlan.zhihu.com/p/134346782
+
+5@ [6]工作流一目了然，看小姐姐用动图展示10大Git命令 - 机器之心的文章 - 知乎 
+
+https://zhuanlan.zhihu.com/p/132573100
+
+3@ [2] 高频使用的 Git 清单
+http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html  
+
+3@ [2]给自己点时间再记记这200条Git命令 - 爱前端不爱恋爱的文章 - 知乎 
+
+https://zhuanlan.zhihu.com/p/137194960
+
+3@ [24]图解git git diff的用法
+
+http://marklodato.github.io/visual-git-guide/index-zh-cn.html
+
+3@ [1]git - 简明指南
 
 https://rogerdudler.github.io/git-guide/index.zh.html
 
-[2]用动图展示10大Git命令
+3@ [2]用动图展示10大Git命令 https://mp.weixin.qq.com/s/PUUL913fig6cFfqy4OKcGA
 
-https://mp.weixin.qq.com/s/PUUL913fig6cFfqy4OKcGA
+2@ [4]Git 的 4 个阶段的撤销更改 https://mp.weixin.qq.com/s/S33W_L9-taAC-aEuHvZYPQ
 
-[3]Git使用教程：最详细、最傻瓜、最浅显、真正手把手教
+2 @[6] -- 的理解
 
-https://mp.weixin.qq.com/s/g0jgzZZ0RG_-dNoBwEs16Q
+https://stackoverflow.com/a/22750480/9561380
 
-[4]Git 的 4 个阶段的撤销更改
+1@ [5]Git 高级用法 https://mp.weixin.qq.com/s/LTHLKrle5mOczHKsK2k30A
 
-https://mp.weixin.qq.com/s/S33W_L9-taAC-aEuHvZYPQ
+1@ [3]Git使用教程：最详细、最傻瓜、最浅显、真正手把手教 https://mp.weixin.qq.com/s/g0jgzZZ0RG_-dNoBwEs16Q
 
-[5]Git 高级用法
+3@[1] ebooks for git
 
-https://mp.weixin.qq.com/s/LTHLKrle5mOczHKsK2k30A
+https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#git
 
+2@[5]这才是真正的Git——Git内部原理揭秘！ - 腾讯技术工程的文章 - 知乎 
 
+https://zhuanlan.zhihu.com/p/96631135
+
+1@[21]我用四个命令，总结了 Git 的所有套路
+
+https://mp.weixin.qq.com/s/VdeQpFCL3GGsfOKrIRW6Hw
+
+1@[11] cherry pick的用法
+
+http://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html
+
+1@详解 Git 大文件存储（Git LFS） - 腾讯技术工程的文章 - 知乎 https://zhuanlan.zhihu.com/p/146683392
+
+1@过来人告诉你，去工作前最好还是学学Git - Java3y的文章 - 知乎 https://zhuanlan.zhihu.com/p/149169595
+
+1@给女朋友讲解什么是Git - Java3y的文章 - 知乎 https://zhuanlan.zhihu.com/p/147161045
 
 
 
