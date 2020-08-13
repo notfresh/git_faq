@@ -731,6 +731,14 @@ https://zhuanlan.zhihu.com/p/134346782
 
 https://zhuanlan.zhihu.com/p/132573100
 
+3@[5]Git内部原理揭秘！ - 腾讯大佬的分享
+
+https://zhuanlan.zhihu.com/p/96631135
+
+3@腾讯大佬的配套讲解
+
+https://www.bilibili.com/video/av77252063
+
 3@ [2] 高频使用的 Git 清单
 http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html  
 
@@ -762,9 +770,7 @@ https://stackoverflow.com/a/22750480/9561380
 
 https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#git
 
-2@[5]这才是真正的Git——Git内部原理揭秘！ - 腾讯技术工程的文章 - 知乎 
 
-https://zhuanlan.zhihu.com/p/96631135
 
 1@[21]我用四个命令，总结了 Git 的所有套路
 
