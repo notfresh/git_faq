@@ -723,6 +723,14 @@ Small note: If editing the README, please conform to the [standard-readme](https
 
 ## 参考文献
 
+不错的ppt，准备下载，改造
+
+https://www.slideshare.net/bcbbslides/introduction-to-git-and-github-72514916?from_action=save#
+
+下载网站
+
+https://slidesharedownloader.ngelmat.net/ 
+
 5@ [4]如果你觉得学习 Git 很枯燥，**那是因为你还没玩过这款游戏**！ - GitHub Daily的文章 - 知乎 
 
 https://zhuanlan.zhihu.com/p/134346782
@@ -786,7 +794,9 @@ http://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html
 
 1@给女朋友讲解什么是Git - Java3y的文章 - 知乎 https://zhuanlan.zhihu.com/p/147161045
 
+ppt
 
+https://www.yupengsir.com/topic/content?i=52
 
 ## 特别感谢
 
