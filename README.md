@@ -812,7 +812,7 @@ https://www.yupengsir.com/topic/content?i=52
 
 
 
-## Licence
+## License
 
 CC4.0 自由转载-保持署名  © 2020 notfresh
 
