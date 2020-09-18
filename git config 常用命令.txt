@@ -1,4 +1,4 @@
- git config --global alias.l "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date='format:%Y- %m-%d %H:%M:%S'
+ git config --global alias.l "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit"
  git config --global alias.st "status -s"
  git config --global alias.ck "checkout"
  git config --global alias.ckp "checkout -p"
