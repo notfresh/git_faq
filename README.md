@@ -685,8 +685,6 @@ Dropped refs/stash@{0} (1c03cfd8d607a723be6d8afd270fba4d734e3b29)
 
 现在提交历史又恢复了，我们可以继续编辑了。
 
-
-
 注意，如果我们
 
 
