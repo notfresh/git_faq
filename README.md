@@ -39,6 +39,7 @@ git的入门是真的难.
 - [维护者](#维护者)
 - [如何贡献](#如何贡献)
 - [参考文献](#参考文献)
+- [tricks](#tricks)
 - [Licence](#licence)
 
 
@@ -814,9 +815,7 @@ https://www.yupengsir.com/topic/content?i=52
 
 CC4.0 自由转载-保持署名  © 2020 notfresh
 
-## 其他
-这是一次来此网站的提交
-这是第二次提交
-测试。
+## Tricks
+--name-only 在 git diff 和 git show 等命令中，如果指向看文件维度的，就可以加上这个配置
 
 
