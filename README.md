@@ -39,6 +39,7 @@ git的入门是真的难.
 - [维护者](#维护者)
 - [如何贡献](#如何贡献)
 - [参考文献](#参考文献)
+- [如何规范你的commit](#如何规范你的commit)
 - [Licence](#licence)
 
 
@@ -816,9 +817,10 @@ https://www.yupengsir.com/topic/content?i=52
 
 CC4.0 自由转载-保持署名  © 2020 notfresh
 
-## 其他
-这是一次来此网站的提交
-这是第二次提交
-测试。
+## 如何规范你的commit
+从公司多人角度考虑, 如何规范你的 Git Commit message
+
+如何规范你的Git commit？ - 阿里技术的文章 - 知乎
+https://zhuanlan.zhihu.com/p/182553920
 
 
