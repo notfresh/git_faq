@@ -39,7 +39,11 @@ git的入门是真的难.
 - [维护者](#维护者)
 - [如何贡献](#如何贡献)
 - [参考文献](#参考文献)
+<<<<<<< HEAD
 - [如何规范你的commit](#如何规范你的commit)
+=======
+- [tricks](#tricks)
+>>>>>>> 72405c8e3e9757447ec97aec010410d666e586bb
 - [Licence](#licence)
 - [github国内加速方法](#github国内加速方法)
 
@@ -630,7 +634,12 @@ git show TagName  ===>查看标签代表的提交
 间的区别：
 $ git diff 2a 2b
 
+接下来, 我们看一个全能的diff示意图.
 
+![image](https://user-images.githubusercontent.com/12556509/128114726-5ea256ba-a9bb-437d-9acf-fba1d4f3dcaa.png)
+
+可以这么理解, git diff 的出发点是当前工作目录, 也就是你实时修改的, git diff 比较工作目录和暂存区, git diff HEAD 比较工作目录和最后提交的, git diff --cached 比较暂存区和最后提交的,
+git diff branch1 branch2 比较branch2和branch1的区别, git diff commit1 commit2 比较commit2和commit1相比的变化.
 
 ### git stash
 
@@ -685,8 +694,6 @@ Dropped refs/stash@{0} (1c03cfd8d607a723be6d8afd270fba4d734e3b29)
 ```
 
 现在提交历史又恢复了，我们可以继续编辑了。
-
-
 
 注意，如果我们
 
@@ -822,6 +829,8 @@ CC4.0 自由转载-保持署名  © 2020 notfresh
 
 如何规范你的Git commit？ - 阿里技术的文章 - 知乎
 https://zhuanlan.zhihu.com/p/182553920
+## Tricks
+--name-only 在 git diff 和 git show 等命令中，如果指向看文件维度的，就可以加上这个配置
 
 
 # github国内加速方法
