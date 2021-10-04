@@ -834,3 +834,8 @@ https://zhuanlan.zhihu.com/p/182553920
 # github国内加速方法
 参见这个网址，非常的好用。  
 https://www.cnblogs.com/july-sunny/p/13697156.html
+
+# 子模块的使用submodule
+如何使用子模块进行管理代码呢？参见以下文章，写的很好： 
+https://zhuanlan.zhihu.com/p/87053283
+
