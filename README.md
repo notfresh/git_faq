@@ -39,11 +39,8 @@ git的入门是真的难.
 - [维护者](#维护者)
 - [如何贡献](#如何贡献)
 - [参考文献](#参考文献)
-<<<<<<< HEAD
 - [如何规范你的commit](#如何规范你的commit)
-=======
 - [tricks](#tricks)
->>>>>>> 72405c8e3e9757447ec97aec010410d666e586bb
 - [Licence](#licence)
 - [github国内加速方法](#github国内加速方法)
 
@@ -829,6 +826,7 @@ CC4.0 自由转载-保持署名  © 2020 notfresh
 
 如何规范你的Git commit？ - 阿里技术的文章 - 知乎
 https://zhuanlan.zhihu.com/p/182553920
+
 ## Tricks
 --name-only 在 git diff 和 git show 等命令中，如果指向看文件维度的，就可以加上这个配置
 
