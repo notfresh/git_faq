@@ -41,7 +41,7 @@ git的入门是真的难.
 - [参考文献](#参考文献)
 - [如何规范你的commit](#如何规范你的commit)
 - [Licence](#licence)
-
+- [github国内加速方法](#github国内加速方法)
 
 
 ## 学 git 的误区和正确姿势 
@@ -824,3 +824,6 @@ CC4.0 自由转载-保持署名  © 2020 notfresh
 https://zhuanlan.zhihu.com/p/182553920
 
 
+# github国内加速方法
+参见这个网址，非常的好用。  
+https://www.cnblogs.com/july-sunny/p/13697156.html
