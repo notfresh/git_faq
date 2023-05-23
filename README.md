@@ -415,6 +415,11 @@ Date:   Thu Jun 18 10:42:32 2020 +0800
 
 ```shell
 git config --global alias.l "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date='format:%Y-%m-%d %H:%M:%S'"
+
+在老版本使用
+
+git config --global alias.l "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s%Creset %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
 ```
 
 这条命令为 git log 配置了一个别名，附带了很多的参数，我们可以使用 git l 查看效果：
